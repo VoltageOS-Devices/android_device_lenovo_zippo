@@ -6,16 +6,19 @@
 
 $(call inherit-product, device/lenovo/zippo/device.mk)
 
-# Inherit some common Fluid stuff
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
-IS_PHONE := true
+# Inherit some common Voltage stuff
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Official-ify
+VOLTAGE_BUILD_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Lenovo
 PRODUCT_DEVICE := zippo
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_MODEL := Lenovo L78051
-PRODUCT_NAME := fluid_zippo
+PRODUCT_NAME := voltage_zippo
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 

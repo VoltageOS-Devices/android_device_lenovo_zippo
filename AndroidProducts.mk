@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_zippo.mk
+    $(LOCAL_DIR)/voltage_zippo.mk
 
 COMMON_LUNCH_CHOICES := \
-    fluid_zippo-user \
-    fluid_zippo-userdebug \
-    fluid_zippo-eng
+    voltage_zippo-user \
+    voltage_zippo-userdebug \
+    voltage_zippo-eng
